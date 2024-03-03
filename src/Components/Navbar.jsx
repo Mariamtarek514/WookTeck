@@ -255,7 +255,7 @@ const MobileNavbar = ({ controls }) => {
       }}
       initial="initial"
       animate={controls}
-      className="absolute top-0 flex flex-col h-screen gap-10 right-0 px-6 py-8 bg-deep w-[300px] max-w-full"
+      className="absolute top-0 flex flex-col h-screen gap-10  right-0 px-6 py-8 bg-deep w-[300px] max-w-full"
     >
       <ul className=" flex flex-col  gap-6 pb-5 border-b border-white/10">
         <li className="cursor-pointer ms-auto " onClick={handleCloseClick}>
@@ -294,7 +294,7 @@ const MobileNavbar = ({ controls }) => {
           </NavLink>
         </li>
       </ul>
-      <ul className="flex   gap-4">
+      <ul className="flex mt-5  gap-4">
         <li
           className={`border-1 hover:border-primary cursor-pointer border-white/50 border w-[30px] h-[30px] flex items-center justify-center rounded-tr-[5px] rounded-bl-[5px]`}
         >
