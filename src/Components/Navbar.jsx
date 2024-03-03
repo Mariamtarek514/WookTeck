@@ -224,7 +224,7 @@ const Navbar = () => {
           className="bg-transparent focus:outline-none block lg:hidden"
           onClick={handleClick}
         >
-          <FaBarsStaggered />
+          <FaBarsStaggered size={20} />
         </button>
         {/* mobile navbar */}
         <MobileNavbar controls={controls} />
@@ -240,12 +240,14 @@ const MobileNavbar = ({ controls }) => {
     <motion.div
       variants={{
         initial: {
-          x: "100%",
+          translateX: "100%",
           visibility: "hidden",
+          display: "none",
         },
         animate: {
-          x: "0",
+          translateX: "0",
           visibility: "visible",
+          display: "block",
         },
       }}
       transition={{
