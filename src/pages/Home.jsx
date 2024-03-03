@@ -1,11 +1,16 @@
 import React from "react";
 import Hero from "../UI/Hero";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, type: "spring" }}
+    >
       <Hero />
-    </div>
+    </motion.div>
   );
 };
 

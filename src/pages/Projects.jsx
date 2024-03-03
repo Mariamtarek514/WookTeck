@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 import ProjectItem from "../UI/ProjectItem";
 import SectionHeader from "../UI/SectionHeader";
+import { motion } from "framer-motion";
+
 const list = [
   [
     { id: 0, image: "./assets/projects/project_1.png" },
@@ -27,13 +30,18 @@ const list = [
 
 const Projects = () => {
   return (
-    <div className="Container xl:w-[1250px] mb-16 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, type: "spring" }}
+      className="Container xl:w-[1250px] mb-16 "
+    >
       <SectionHeader
         title="Our projects"
         text="We present you the best works of our design studio. From stunning living rooms to the most unusual exclusive solutions."
       />
       <ProjectItem item={list} />
-    </div>
+    </motion.div>
   );
 };
 

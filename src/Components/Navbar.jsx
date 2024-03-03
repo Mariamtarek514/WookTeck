@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav
       className={`Container  ${
-        location.pathname !== "/home" ? "shadow shadow-md" : "fixed z-10"
+        location.pathname !== "/home" ? "shadow shadow-md" : "absolute z-10"
       } `}
     >
       <div
@@ -241,9 +241,11 @@ const MobileNavbar = ({ controls }) => {
       variants={{
         initial: {
           x: "100%",
+          visibility: "hidden",
         },
         animate: {
           x: "0",
+          visibility: "visible",
         },
       }}
       transition={{
@@ -276,7 +278,7 @@ const MobileNavbar = ({ controls }) => {
         <li>
           <NavLink
             className="text-white hover:bg-[#c4c4c433] py-2 px-4 rounded-tr-[5px] rounded-bl-[5px] "
-            to="/services"
+            to="/projects"
           >
             Projects
           </NavLink>
