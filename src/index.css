@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden !important;
+}
+body {
+  overflow-x: hidden !important;
+}
+@layer components {
+  .Container {
+    @apply container mx-auto max-w-screen-2xl px-4 md:px-8 lg:px-10 xl:px-28;
+  }
+}
+.active.active_grey {
+  background-color: #c4c4c433;
+  padding: 8px 16px;
+  border-radius: 0 5px 0 5px;
+  -webkit-border-radius: 0 5px 0 5px;
+  -moz-border-radius: 0 5px 0 5px;
+  -ms-border-radius: 0 5px 0 5px;
+  -o-border-radius: 0 5px 0 5px;
+}
+.active.active_primary {
+  background-color: #f88500;
+  padding: 8px 16px;
+  border-radius: 0 5px 0 5px;
+  -webkit-border-radius: 0 5px 0 5px;
+  -moz-border-radius: 0 5px 0 5px;
+  -ms-border-radius: 0 5px 0 5px;
+  -o-border-radius: 0 5px 0 5px;
+  color: #fff;
+}
+.active {
+  background-color: #f88500;
+  padding: 8px 16px;
+  border-radius: 0 5px 0 5px;
+  -webkit-border-radius: 0 5px 0 5px;
+  -moz-border-radius: 0 5px 0 5px;
+  -ms-border-radius: 0 5px 0 5px;
+  -o-border-radius: 0 5px 0 5px;
+  color: #fff;
+}
